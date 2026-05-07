@@ -16,7 +16,7 @@ def calculate_score(text):
     text = text.lower()
     score = 0
 
-    skills = ["python", "sql", "aws", "etl"]
+    skills = ["python", "sql", "aws", "etl", "US GAAP","AUDIT","MONTH END CLOSE","GST","TDS","IND AS"]
     score += min(sum(1 for s in skills if s in text) * 5, 30)
 
     if "experience" in text:
