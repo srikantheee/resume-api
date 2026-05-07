@@ -20,7 +20,7 @@ def calculate_score(text):
     score += min(sum(1 for s in skills if s in text) * 5, 30)
 
     if "experience" in text:
-        score += 20
+        score += 70
 
     if "project" in text:
         score += 15
